@@ -3,10 +3,16 @@
 #include <time.h>
 
 int main(){
-
     int count = 0;
     int num;
     int i = 0;
+    char name[20];
+
+    printf("Who are you?\n");
+    printf("> ");
+    scanf("%s",name);
+    printf("Hello, %s!\n",name);
+
     printf("Tossing a coin...\n");
     srand(time(NULL));
     for(i = 0 ; i < 3 ; i++){
